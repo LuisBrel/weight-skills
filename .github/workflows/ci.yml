@@ -1,0 +1,59 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dev tooling
+        run: python -m pip install -U pip ruff mypy
+      - name: Ruff
+        run: ruff check src tests
+      - name: Mypy
+        run: mypy src
+
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-14]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install package (CPU / core)
+        run: |
+          python -m pip install -U pip
+          python -m pip install -e ".[dev,proxy]"
+      - name: Install MLX on Apple Silicon
+        if: runner.os == 'macOS'
+        run: python -m pip install "mlx>=0.20" "mlx-lm>=0.20"
+      - name: Run tests
+        run: python -m pytest tests/ -q --maxfail=1
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Build wheel and sdist
+        run: |
+          python -m pip install -U pip build
+          python -m build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/*

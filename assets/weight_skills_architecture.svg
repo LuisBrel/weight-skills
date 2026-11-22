@@ -1,0 +1,83 @@
+<svg viewBox="0 0 1200 460" width="1200" height="460" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgPearl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7f6f2"/>
+      <stop offset="100%" stop-color="#eeede7"/>
+    </linearGradient>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#506344"/>
+    </marker>
+    <filter id="cardShadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#242824" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Pearl / Limestone Canvas -->
+  <rect width="1200" height="460" rx="16" fill="url(#bgPearl)" stroke="#dadcd3" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <text x="60" y="54" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#242824">WEIGHT SKILLS // UNIVERSAL TWO-REGIME RUNTIME</text>
+  <text x="60" y="78" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#656b63">Compile SKILL.md folders once (-99.1% startup index) &amp; serve any OpenAI / Anthropic harness on any local model server</text>
+  <line x1="60" y1="96" x2="1140" y2="96" stroke="#dadcd3" stroke-width="1"/>
+
+  <!-- Left Card: Any Agent Harness -->
+  <g filter="url(#cardShadow)">
+    <rect x="60" y="122" width="290" height="248" rx="12" fill="#f7f6f2" stroke="#dadcd3" stroke-width="1.5"/>
+  </g>
+  <rect x="78" y="138" width="126" height="22" rx="11" fill="#dce3d4"/>
+  <text x="141" y="153" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="bold" fill="#242824">CLIENT HARNESSES</text>
+  <text x="78" y="186" font-family="Georgia, serif" font-size="17" font-weight="bold" fill="#242824">Any Agent Client</text>
+  <rect x="78" y="204" width="254" height="32" rx="6" fill="#eeede7"/>
+  <text x="92" y="224" font-family="monospace" font-size="12" fill="#242824">Claude Code  (/v1/messages)</text>
+  <rect x="78" y="244" width="254" height="32" rx="6" fill="#eeede7"/>
+  <text x="92" y="264" font-family="monospace" font-size="12" fill="#242824">Codex / Cursor  (/v1/chat)</text>
+  <rect x="78" y="284" width="254" height="32" rx="6" fill="#eeede7"/>
+  <text x="92" y="304" font-family="monospace" font-size="12" fill="#242824">Antigravity &amp; Custom Tools</text>
+  <text x="78" y="346" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#656b63">Zero client-side prompt bloat</text>
+
+  <!-- Arrow 1 -->
+  <line x1="358" y1="246" x2="412" y2="246" stroke="#506344" stroke-width="2.5" marker-end="url(#arrowGreen)"/>
+
+  <!-- Center Card: Universal Adapter -->
+  <g filter="url(#cardShadow)">
+    <rect x="420" y="114" width="360" height="264" rx="12" fill="#20251f" stroke="#506344" stroke-width="2"/>
+  </g>
+  <rect x="440" y="130" width="172" height="22" rx="11" fill="#506344"/>
+  <text x="526" y="145" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="bold" fill="#f4f4e9">UNIVERSAL_ADAPTER.PY</text>
+  <text x="440" y="176" font-family="Georgia, serif" font-size="17" font-weight="bold" fill="#f4f4e9">Two-Regime Runtime</text>
+
+  <!-- Regime 1 Inner Card -->
+  <rect x="440" y="192" width="320" height="78" rx="8" fill="#2a3129" stroke="#63725b" stroke-width="1"/>
+  <text x="454" y="212" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#dce3d4">Regime 1: Static Prefix &amp; KV Hoist</text>
+  <text x="454" y="232" font-family="monospace" font-size="11" fill="#f4f4e9">242.5 KB -&gt; 2.25 KB (-99.1% index)</text>
+  <text x="454" y="252" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#b7beb2">100% exact schemas &amp; cross-session KV hit</text>
+
+  <!-- Regime 2 Inner Card -->
+  <rect x="440" y="282" width="320" height="78" rx="8" fill="#2a3129" stroke="#63725b" stroke-width="1"/>
+  <text x="454" y="302" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#dce3d4">Regime 2: Routed Skill &amp; Cartridge</text>
+  <text x="454" y="322" font-family="monospace" font-size="11" fill="#f4f4e9">cartridge@1 + G.147 MoE + PolicyGate</text>
+  <text x="454" y="342" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#b7beb2">17/18 (94.44%) routing &amp; safe abstention</text>
+
+  <!-- Arrow 2 -->
+  <line x1="788" y1="246" x2="842" y2="246" stroke="#506344" stroke-width="2.5" marker-end="url(#arrowGreen)"/>
+
+  <!-- Right Card: Any Local Backend -->
+  <g filter="url(#cardShadow)">
+    <rect x="850" y="122" width="290" height="248" rx="12" fill="#f7f6f2" stroke="#dadcd3" stroke-width="1.5"/>
+  </g>
+  <rect x="868" y="138" width="128" height="22" rx="11" fill="#dce3d4"/>
+  <text x="932" y="153" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="bold" fill="#242824">LOCAL BACKENDS</text>
+  <text x="868" y="186" font-family="Georgia, serif" font-size="17" font-weight="bold" fill="#242824">Any Local Server</text>
+  <rect x="868" y="204" width="254" height="32" rx="6" fill="#eeede7"/>
+  <text x="882" y="224" font-family="monospace" font-size="12" fill="#242824">OMLX  (MLX + export-omlx)</text>
+  <rect x="868" y="244" width="254" height="32" rx="6" fill="#eeede7"/>
+  <text x="882" y="264" font-family="monospace" font-size="12" fill="#242824">Ollama / LM Studio / vLLM</text>
+  <rect x="868" y="284" width="254" height="32" rx="6" fill="#eeede7"/>
+  <text x="882" y="304" font-family="monospace" font-size="12" fill="#242824">llama.cpp  (llama-server)</text>
+  <text x="868" y="346" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#656b63">Occamy 1.0 · Inkling 2 Mini · Qwen3.8</text>
+
+  <!-- Footer Telemetry Bar -->
+  <line x1="60" y1="398" x2="1140" y2="398" stroke="#dadcd3" stroke-width="1"/>
+  <text x="60" y="426" font-family="monospace" font-size="12" fill="#242824">VERIFIED ON M4 MAX 128GB MLX</text>
+  <text x="340" y="426" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#656b63">252 Unit &amp; E2E Tests Passing  |  12,288 / 12,538 Cross-Session KV Reuse  |  Zero External Dependencies</text>
+</svg>

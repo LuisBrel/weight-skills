@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the WSSC paper and this repository."
+title: "weight-skills: zero-token procedural skills for local LLMs"
+abstract: >-
+  A runtime for compiling agent procedures into low-rank weight cartridges and
+  mounting them into frozen foundation models at inference time, eliminating
+  system-prompt prefill cost without modifying base weights.
+authors:
+  - family-names: Machado
+    given-names: Luis
+    affiliation: "IU International University of Applied Sciences"
+version: 0.1.0
+date-released: "2026-11-11"
+license: MIT
+repository-code: "https://github.com/luisbrel/weight-skills"
+references:
+  - type: generic
+    title: "Zero-Skills in Context: Sub-Second Algebraic Compilation of Agent Procedures into Feed-Forward Weights"
+    authors:
+      - family-names: Machado
+        given-names: Luis
+    doi: "10.5281/zenodo.24122804"
+    year: 2026
